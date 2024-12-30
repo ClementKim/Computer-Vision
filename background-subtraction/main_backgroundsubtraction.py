@@ -3,12 +3,7 @@ import cv2 as cv
 import os
 import evaluation as eval
 
-###############################################################
-##### This code has been tested in Python 3.6 environment #####
-###############################################################
-
 def main():
-
     ##### Set alpha and threshold
     alpha = 0.001
     threshold = 35
@@ -56,7 +51,7 @@ def main():
 
         ##### final result
         result = current_gray_masked_mk2.astype(np.uint8)
-        # cv.imshow('result', result)
+        cv.imshow('result', result)
 
         ##### renew background
         frame_prev_gray = frame_current_gray
